@@ -16,12 +16,18 @@ is conducted based on user input.
 ## Get Started
 I created this project solely in Jupyter Notebook, so you will need Anaconda installed in order to run my project. 
 You will also need to install the word cloud module. You can find instructions here: 
-https://github.com/amueller/word_cloud/commit/34c5828532e9d3d745b2b1b3b92717de6d19dc0f
+
 I simply ran `sudo pip install wordcloud` from the command line. 
+
+You can also install by entering: 
+`conda install -c https://conda.anaconda.org/conda-forge wordcloud`
+in the Anaconda prompt. After this, start python shell, and import the wordcloud module.
+
+You can find further instructions here: https://github.com/amueller/word_cloud/commit/34c5828532e9d3d745b2b1b3b92717de6d19dc0f
 
 ## Process and Project Requirement Fulfillment 
 I read the Shakespeare_data.csv file into Jupyter Notebook, and created a sqlite database called “shakespeares_works.db”. 
-The Python script which sets up the SQLite database is found in import_csv.ipynb. As mentioned previously, I used Python 
+The Python script which sets up the SQLite database is found in import_csv_fix.ipynb. As mentioned previously, I used Python 
 in Jupyter notebook to take the data from Shakespeare_data.csv and create a SQLite database called shakespeares_works.db. 
 At this time, I also created a new column in the database called “searchname.” This new column was created in order to 
 ensure that user input for play titles could be matched precisely to play titles in the database, with no concern for 
@@ -41,5 +47,3 @@ a word cloud for the viewer to see. There were existing modern stop words that a
 Elizabethan stop words that I added (“thy, thee, etc.“)
 
 Using the wordcloud module, which uses Matplotlib and Python Imaging Library, I was able to generate a word cloud. 
-Note: If you’re using a mac, you shouldn’t have a problem viewing the font. If you’re using any other platform, 
-you may need to change the file extension of “font_path” in the final kernel to .ttf.
