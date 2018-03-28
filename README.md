@@ -14,16 +14,21 @@ the final product as a wordcloud. Unlike some other projects, I assume, this is 
 is conducted based on user input.
 
 ## Get Started
-I created this project solely in Jupyter Notebook, so you will need Anaconda installed in order to run my project. 
-You will also need to install the word cloud module. You can find instructions here: 
+1. I created this project solely in Jupyter Notebook, so you will need Anaconda installed in order to run my project. 
 
-I simply ran `sudo pip install wordcloud` from the command line. 
+2. You will also need to install the word cloud module. I simply ran `sudo pip install wordcloud` from the command line. 
 
 You can also install by entering: 
 `conda install -c https://conda.anaconda.org/conda-forge wordcloud`
 in the Anaconda prompt. After this, start python shell, and import the wordcloud module.
 
-You can find further instructions here: https://github.com/amueller/word_cloud/commit/34c5828532e9d3d745b2b1b3b92717de6d19dc0f
+You can find further instructions for installing this module here: https://github.com/amueller/word_cloud/commit/34c5828532e9d3d745b2b1b3b92717de6d19dc0f
+
+3. Once you've downloaded the repository files, wordpress module, and Anaconda, open Juypter notebook. 
+
+4. Open import_csv_fix.ipynb. Restart the kernel and run all.
+
+5. Open select_and_double_check.ipynb. Restart the kernel and run all. At this point, the program will prompt you to enter a play and act. Once it's accepted the play and act combination you've chosen, the program will generate a wordcloud--simply scroll down to see. 
 
 ## Process and Project Requirement Fulfillment 
 I read the Shakespeare_data.csv file into Jupyter Notebook, and created a sqlite database called “shakespeares_works.db”. 
